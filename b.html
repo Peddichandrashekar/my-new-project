@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Peddi Chandra Shekar | Portfolio</title>
+
+<meta name="description" content="Professional Portfolio of Peddi Chandra Shekar, B.Tech Information Technology Student at Malla Reddy Deemed to be University.">
+<meta name="keywords" content="Portfolio, IT Student, Web Developer, Python Developer, Internship, Hotel Management Website">
+<meta name="author" content="Peddi Chandra Shekar">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#f4f7fc;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:#0d6efd;
+    color:white;
+    padding:20px 8%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#ffd700;
+}
+
+.hero{
+    text-align:center;
+    padding:100px 20px;
+    background:white;
+}
+
+.hero h1{
+    font-size:52px;
+    margin-bottom:15px;
+    color:#0d6efd;
+}
+
+.hero p{
+    font-size:20px;
+    color:#555;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    background:#0d6efd;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:6px;
+}
+
+.btn:hover{
+    background:#084298;
+}
+
+section{
+    padding:70px 8%;
+}
+
+.section-title{
+    text-align:center;
+    color:#0d6efd;
+    margin-bottom:40px;
+    font-size:32px;
+}
+
+.about,
+.contact{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.skill{
+    background:white;
+    padding:25px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.skill h3{
+    color:#0d6efd;
+}
+
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.project{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.project h3{
+    color:#0d6efd;
+    margin-bottom:10px;
+}
+
+form{
+    max-width:600px;
+    margin:auto;
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+input:focus,
+textarea:focus{
+    outline:2px solid #0d6efd;
+}
+
+button{
+    margin-top:20px;
+    background:#0d6efd;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#084298;
+}
+
+#successMsg{
+    display:none;
+    margin-top:15px;
+    color:green;
+    font-weight:bold;
+    text-align:center;
+}
+
+footer{
+    background:#212529;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:15px;
+}
+
+nav ul li{
+    margin:8px;
+}
+
+.hero h1{
+    font-size:36px;
+}
+
+.hero p{
+    font-size:18px;
+}
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<nav>
+<div class="logo">Portfolio</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+<h1>Peddi Chandra Shekar</h1>
+<p>B.Tech Information Technology Student | Web Developer | Python Programmer</p>
+<a href="#contact" class="btn">Contact Me</a>
+</section>
+
+<section id="about">
+<h2 class="section-title">About Me</h2>
+
+<div class="about">
+<p>
+I am currently pursuing my B.Tech in Information Technology (2nd Year) at Malla Reddy Deemed to be University. I am passionate about Web Development, Python Programming, Cloud Computing, and Software Development. I enjoy building responsive websites and developing practical solutions through technology. I am actively seeking internship opportunities to gain industry experience and enhance my technical skills.
+</p>
+</div>
+</section>
+
+<section id="skills">
+<h2 class="section-title">Technical Skills</h2>
+
+<div class="skills-grid">
+
+<div class="skill">
+<h3>Python</h3>
+<p>Programming & Problem Solving</p>
+</div>
+
+<div class="skill">
+<h3>HTML5</h3>
+<p>Semantic Web Development</p>
+</div>
+
+<div class="skill">
+<h3>CSS3</h3>
+<p>Responsive Design</p>
+</div>
+
+<div class="skill">
+<h3>JavaScript</h3>
+<p>Frontend Development</p>
+</div>
+
+<div class="skill">
+<h3>Cloud Computing</h3>
+<p>Google Cloud Platform</p>
+</div>
+
+<div class="skill">
+<h3>Data Structures</h3>
+<p>Algorithms & Logic Building</p>
+</div>
+
+</div>
+</section>
+
+<section id="projects">
+<h2 class="section-title">Projects</h2>
+
+<div class="projects-grid">
+
+<div class="project">
+<h3>Hotel Management Website</h3>
+<p>
+Developed a responsive Hotel Management Website using HTML, CSS, and JavaScript. The website includes room booking features, hotel services information, customer inquiry forms, and a user-friendly interface.
+</p>
+</div>
+
+<div class="project">
+<h3>Personal Portfolio Website</h3>
+<p>
+Designed and developed a professional portfolio website using HTML5, CSS3, and JavaScript with responsive design and accessibility features.
+</p>
+</div>
+
+</div>
+</section>
+
+<section id="contact">
+<h2 class="section-title">Contact Me</h2>
+
+<div class="contact">
+
+<form id="contactForm">
+
+<label for="name">Full Name</label> <input type="text" id="name" required>
+
+<label for="email">Email Address</label> <input type="email" id="email" required>
+
+<label for="message">Message</label>
+
+<textarea id="message" rows="5" required></textarea>
+
+<button type="submit">Send Message</button>
+
+<p id="successMsg">
+✅ Your details have been sent successfully!
+</p>
+
+</form>
+
+</div>
+</section>
+
+</main>
+
+<footer>
+<p>© 2026 Peddi Chandra Shekar | B.Tech IT Student | Malla Reddy Deemed to be University</p>
+</footer>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(event){
+event.preventDefault();
+
+document.getElementById("successMsg").style.display = "block";
+
+this.reset();
+
+setTimeout(function(){
+document.getElementById("successMsg").style.display = "none";
+},3000);
+});
+</script>
+
+</body>
+</html>
